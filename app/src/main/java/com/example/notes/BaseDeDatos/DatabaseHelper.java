@@ -12,7 +12,7 @@ import java.util.List;
 
 import com.example.notes.BaseDeDatos.DataBaseModelo.Note;
 
-public class DatabaseHerper extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
     // Database Version
     private static final int DATABASE_VERSION = 1;
 
@@ -20,7 +20,7 @@ public class DatabaseHerper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "notes_db";
 
 
-    public DatabaseHerper(Context context) {
+    public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
@@ -72,7 +72,7 @@ public class DatabaseHerper extends SQLiteOpenHelper {
         if (cursor != null)
             cursor.moveToFirst();
 
-        // prepare note object
+        // preparar objeto de nota
         Note note = new Note(
                 cursor.getInt(cursor.getColumnIndex(Note.COLUMN_ID)),
                 cursor.getString(cursor.getColumnIndex(Note.COLUMN_NOTE)),
@@ -125,6 +125,7 @@ public class DatabaseHerper extends SQLiteOpenHelper {
         // return count
         return count;
     }
+
     public int updateNote(Note note) {
         SQLiteDatabase db = this.getWritableDatabase();
 

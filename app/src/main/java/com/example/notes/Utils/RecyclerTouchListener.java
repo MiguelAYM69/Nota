@@ -1,12 +1,11 @@
 package com.example.notes.Utils;
+
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.support.v7.widget.RecyclerView;
-import android.view.GestureDetector;
-import android.widget.AbsListView;
+
 
 public class RecyclerTouchListener implements RecyclerView.OnItemTouchListener{
         private ClickListener clicklistener;
