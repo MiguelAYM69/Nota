@@ -1,4 +1,4 @@
-package BaseDeDatos;
+package com.example.notes.BaseDeDatos;
 
 
 import android.content.ContentValues;
@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-import BaseDeDatos.DataBaseModelo.Note;
+import com.example.notes.BaseDeDatos.DataBaseModelo.Note;
 
 public class DatabaseHerper extends SQLiteOpenHelper {
     // Database Version

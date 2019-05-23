@@ -1,4 +1,4 @@
-package Utils;
+package com.example.notes.Utils;
 
 import android.content.Context;
 import android.content.res.Resources;

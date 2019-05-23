@@ -1,4 +1,4 @@
-package BaseDeDatos.DataBaseModelo;
+package com.example.notes.BaseDeDatos.DataBaseModelo;
 
 public class Note {
     public static final String TABLE_NAME = "notes";
